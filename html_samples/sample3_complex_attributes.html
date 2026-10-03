@@ -1,0 +1,45 @@
+<form
+  id="login-form"
+  class="auth-form"
+  action="/submit"
+  method="post"
+  novalidate
+>
+  <legend>User Authentication</legend>
+  <hr class="divider" />
+  <div class="field-group">
+    <label for="username">Username</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder='Enter "username"'
+      required
+    />
+  </div>
+  <div class="field-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      disabled
+      value="12345"
+    />
+  </div>
+  <div class="checkbox-container">
+    <input type="checkbox" id="remember" name="remember" checked />
+    <label for="remember">Remember me</label>
+  </div>
+  <br />
+  <img
+    src="avatar.jpg"
+    alt="User Avatar"
+    width="100"
+    height="100"
+    data-user-id="9982"
+  />
+  <button type="submit" data-action="submit-form" class="btn btn-primary">
+    Log In
+  </button>
+</form>
